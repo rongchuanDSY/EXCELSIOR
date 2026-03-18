@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: 'Open Sans',sans-serif;
+background:#4f5f6f url("images/blueprint-bg.png") repeat;
+color:#333;
+font-size:16px;
+line-height:1.6;
+margin:0;
+overflow-x:hidden;
+}
+
+h1{
+font-size:32px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+h2{
+font-size:24px;
+font-weight:600;
+margin-top:20px;
+margin-bottom:10px;
+}
+
+h3{
+font-size:18px;
+font-weight:600;
+}
+
+p{
+font-size:16px;
+margin-bottom:15px;
+color:#555;
+}
+
+.container{
+width:1000px;
+margin:0 auto;
+background:#fff;
+box-shadow:0 0 20px rgba(0,0,0,0.05);
+}
+
+.full-width-banner{
+width:1000px;
+height:300px;
+margin:0 auto;
+position:relative;
+overflow:hidden;
+}
+
+.full-width-banner img{
+width:100%;
+height:auto;
+display:block;
+}
+
+.full-width-banner::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.25);
+}
+
+.banner-title{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-family:'Montserrat',sans-serif;
+font-size:60px;
+letter-spacing:4px;
+color:white;
+font-weight:700;
+text-transform:uppercase;
+text-align:center;
+z-index:2;
+}
+
+.main-header{
+padding:20px 0;
+margin-top:-80px;
+position:relative;
+z-index:10;
+}
+
+.nav-wrapper{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 40px;
+}
+
+.main-nav{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+.main-nav > li{
+position:relative;
+}
+
+.main-nav a{
+text-decoration:none;
+color:#2c3e50;
+font-size:14px;
+font-weight:600;
+padding:8px 16px;
+background:rgba(255,255,255,0.6);
+border:2px solid #2c3e50;
+border-radius:6px;
+backdrop-filter:blur(3px);
+transition:0.3s;
+}
+
+.main-nav a:hover{
+background:white;
+color:#2c3e50;
+}
+
+.dropdown-content{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+background:#fff;
+min-width:220px;
+box-shadow:0 8px 15px rgba(0,0,0,0.1);
+z-index:999;
+padding:10px 0;
+list-style:none;
+flex-direction:column;
+}
+
+.dropdown:hover .dropdown-content{
+display:flex;
+}
+
+.dropdown-content li{
+width:100%;
+}
+
+.dropdown-content li a{
+display:block;
+padding:12px 20px;
+white-space:nowrap;
+border:none;
+color:#333;
+}
+
+.dropdown-content li a:hover{
+background:#f8f9fa;
+color:#1abc9c;
+}
+
+.layout-grid{
+display:grid;
+grid-template-columns:200px 1fr 250px;
+gap:40px;
+padding:40px;
+}
+
+.sidebar{
+padding-right:20px;
+border-right:1px solid #e5e5e5;
+}
+
+.sidebar h3{
+font-family:'Montserrat',sans-serif;
+font-size:16px;
+margin-bottom:20px;
+border-left:4px solid #1abc9c;
+padding-left:10px;
+}
+
+.sidebar-list{
+list-style:none;
+}
+
+.sidebar-list li{
+margin-bottom:12px;
+}
+
+.sidebar-list a{
+text-decoration:none;
+color:#666;
+font-size:14px;
+}
+
+.main-content h1{
+font-family:'Montserrat',sans-serif;
+font-size:32px;
+font-weight:700;
+margin-bottom:20px;
+color:#2c3e50;
+}
+
+.content-image{
+width:100%;
+margin:20px 0;
+text-align:center;
+}
+
+.content-image img{
+width:100%;
+max-width:700px;
+height:auto;
+display:block;
+margin:0 auto;
+}
+
+.contact-box{
+background:#f9f9f9;
+padding:20px;
+border-left:1px solid #e5e5e5;
+border-radius:4px;
+}
+
+.contact-box input,
+.contact-box textarea{
+width:100%;
+margin-bottom:15px;
+padding:10px;
+border:1px solid #ddd;
+border-radius:3px;
+}
+
+.submit-btn{
+width:100%;
+padding:12px;
+background:#1abc9c;
+color:#fff;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+
+.site-footer{
+text-align:center;
+padding:30px;
+background:#2c3e50;
+color:#fff;
+font-size:13px;
+}
